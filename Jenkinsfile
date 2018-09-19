@@ -1,7 +1,7 @@
 
 node("launchpad-nodejs") {
   checkout scm
-  stage("Build") {
+  stage("BuildCode") {
     sh "npm install"
   }
   stage("Deploy") {
